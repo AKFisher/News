@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="129" id="KGk-i7-Jjw" customClass="NewsViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="硬汉服软？普京国情咨文关注经济" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSg-6c-Bl3">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜狐国际" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tc5-RW-eQt">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Al2-fm-qrB">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Al2-fm-qrB" secondAttribute="height" multiplier="5:4" id="Fa1-GO-uIV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-12-01 20:19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Up-uQ-R5Q">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hSg-6c-Bl3" firstAttribute="top" secondItem="Al2-fm-qrB" secondAttribute="top" id="Myu-9M-72Y"/>
+                    <constraint firstItem="Al2-fm-qrB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="QaW-fV-Gca"/>
+                    <constraint firstAttribute="trailing" secondItem="6Up-uQ-R5Q" secondAttribute="trailing" constant="8" id="gVM-U6-nP9"/>
+                    <constraint firstAttribute="bottom" secondItem="Al2-fm-qrB" secondAttribute="bottom" constant="8" id="hX5-lP-5AD"/>
+                    <constraint firstItem="tc5-RW-eQt" firstAttribute="leading" secondItem="Al2-fm-qrB" secondAttribute="trailing" constant="8" id="kKd-7w-hXp"/>
+                    <constraint firstItem="6Up-uQ-R5Q" firstAttribute="bottom" secondItem="Al2-fm-qrB" secondAttribute="bottom" id="nCb-2E-CAc"/>
+                    <constraint firstItem="tc5-RW-eQt" firstAttribute="bottom" secondItem="Al2-fm-qrB" secondAttribute="bottom" id="nQL-TW-Zpo"/>
+                    <constraint firstItem="hSg-6c-Bl3" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="sw9-WN-faC"/>
+                    <constraint firstItem="hSg-6c-Bl3" firstAttribute="leading" secondItem="Al2-fm-qrB" secondAttribute="trailing" constant="8" id="vRe-bb-e0O"/>
+                    <constraint firstItem="Al2-fm-qrB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="z5Q-2E-fSk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsDesc" destination="tc5-RW-eQt" id="yrE-Lz-wcD"/>
+                <outlet property="newsImage" destination="Al2-fm-qrB" id="CQB-Km-MbQ"/>
+                <outlet property="newsTime" destination="6Up-uQ-R5Q" id="coo-HN-F2B"/>
+                <outlet property="newsTitle" destination="hSg-6c-Bl3" id="ylH-QE-pcz"/>
+            </connections>
+            <point key="canvasLocation" x="-93" y="-73.5"/>
+        </tableViewCell>
+    </objects>
+</document>
